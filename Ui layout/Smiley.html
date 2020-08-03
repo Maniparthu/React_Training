@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smiley</title>
+</head>
+<body>
+    <canvas id="Smiley" width="200" height="150" style="border:1px solid black;"></canvas>
+    
+    <script>
+       let c = document.getElementById("Smiley");           
+       let draw = c.getContext("2d");    
+           draw.beginPath();    
+           draw.fillStyle = "yellow";    
+           draw.arc(90, 75, 50, 0, Math.PI * 2, true);    
+           draw.closePath();    
+           draw.fill();
+            
+         //  draw.moveTo(50, 50);        
+           draw.beginPath();       
+           draw.fillStyle = "black";        
+           draw.arc(65, 50, 5, 0, Math.PI * 2, true);    
+           draw.closePath();    
+           draw.fill();       
+          // draw.moveTo(103, 49);    
+           draw.beginPath();    
+           draw.fillStyle = "black";       
+           draw.arc(115, 50, 5, 0, Math.PI * 2, true);    
+           draw.closePath();    
+           draw.fill(); 
+        
+           //draw.moveTo(105, 75);    
+           draw.beginPath();    
+           draw.arc(90, 75, 30, 0, Math.PI, false);        
+           draw.stroke();
+    </script> 
+</body>
+</html>
